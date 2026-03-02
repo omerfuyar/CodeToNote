@@ -1,6 +1,19 @@
 #include <stdio.h>
 #include <string.h>
-#include "composer.c"
+#include "composer.h"
+
+#define KEYWORD_ENTRY(a, b) KEYWORD_##a,
+enum
+{
+    KEYWORD_TABLE
+        KEYWORD_COUNT
+};
+#undef KEYWORD_ENTRY
+
+int composeFile(FILE *inputFile, FILE *outputFile)
+{
+    return 0;
+}
 
 #define FILE_NAME_LENGTH 64
 #define FILE_READ_BUFFER_LENGTH 512
