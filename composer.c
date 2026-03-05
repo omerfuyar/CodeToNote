@@ -3,20 +3,21 @@
 #include "composer.h"
 
 #define KEYWORD_ENTRY(a, b) KEYWORD_##a,
-enum
+typedef enum KEYWORD_ID
 {
     KEYWORD_TABLE
         KEYWORD_COUNT
-};
+} KEYWORD_ID;
 #undef KEYWORD_ENTRY
+
+int processKeyword(KEYWORD_ID id)
+{
+}
 
 int composeFile(FILE *inputFile, FILE *outputFile)
 {
     return 0;
 }
-
-#define FILE_NAME_LENGTH 64
-#define FILE_READ_BUFFER_LENGTH 512
 
 int main(int argc, char **argv)
 {

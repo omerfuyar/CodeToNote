@@ -1,2 +1,5 @@
+#define FILE_NAME_LENGTH 64
+#define FILE_READ_BUFFER_LENGTH 512
+
 #define KEYWORD_TABLE \
     KEYWORD_ENTRY(if, "")
